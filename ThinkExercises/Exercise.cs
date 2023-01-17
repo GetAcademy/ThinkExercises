@@ -20,7 +20,13 @@
                 fire første linjer til midten
                 1. Space - starter på 0 - øker med 1
                 2. Hashtag - starter på 1 - øker med 1
-                3. Space - starter på 6 - minker med 2        
+                3. Space - starter på 6 - minker med 2    
+            
+                Budskap: 
+                - analyse: se mønsteret
+                - skrive kode som er logisk riktig, men gjentakelser er lov
+                - når det virker, refactor bort flest mulig gjentakelser
+
              */
             WriteFourRows(0, 1, 6,
                 1, 1, -2);
