@@ -1,10 +1,10 @@
 ﻿namespace ThinkExercises
 {
-    internal class Exercise
+    internal class Exercise2_2
     {
 
 
-        public static void No2_2()
+        public static void Run()
         {
             /*
 

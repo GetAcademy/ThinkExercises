@@ -1,5 +1,6 @@
 ﻿using ThinkExercises;
 
-//Exercise.No2_2();
-//ExerciseNo3_7.Run();
-Exercise3_4.Run();
+//Exercise2_2.Run();
+//Exercise3_7.Run();
+//Exercise3_4.Run();
+Exercise3_3.Run();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ThinkExercises
 {
-    internal class ExerciseNo3_7
+    internal class Exercise3_7
     {
         public static void Run()
         {
