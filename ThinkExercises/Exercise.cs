@@ -7,6 +7,10 @@
         public static void No2_2()
         {
             /*
+
+            Pause til 11:00
+
+
                 2-3 Here’s an especially tricky one:
                 #            #
                  ##        ##
