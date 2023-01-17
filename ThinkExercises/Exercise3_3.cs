@@ -1,4 +1,6 @@
-﻿namespace ThinkExercises
+﻿using System.Linq;
+
+namespace ThinkExercises
 {
     internal class Exercise3_3
     {
@@ -10,8 +12,8 @@
 
         public static void Run()
         {
-            var numbers1 = new[] { 1, 9, 3, 4, 9, 5, 2, 5, 5, 8, 9, 7, 5, 5, 9, 9, 9 };
-            var numbers2 = new[] { 1, 2, 3, 4, 5, 6 };
+            var numbers1 = new[] {1, 9, 3, 4, 9, 5, 2, 5, 5, 8, 9, 7, 5, 5, 9, 9, 9};
+            var numbers2 = new[] {1, 2, 3, 4, 5, 6};
 
             Console.WriteLine(IsSorted(numbers1));
             Console.WriteLine(IsSorted(numbers2));
@@ -25,6 +27,7 @@
                 if (number < lastNumber) return false;
                 lastNumber = number;
             }
+
             return true;
         }
 
@@ -34,12 +37,15 @@
             {
                 if (numbers[i] < numbers[i - 1]) return false;
             }
+
             return true;
         }
-    }
 
-    //private static bool IsSorted3(int[] numbers)
-    //{
-    //    return !numbers.Any((int value, int i) => i > 0 && numbers[i] < numbers[i - 1]);
-    //}
+        private static bool IsSorted3(int[] numbers)
+        {
+            return !numbers
+                .Select((value, index) => index)
+                .Any(i => i > 0 && numbers[i] < numbers[i - 1]);
+        }
+    }
 }
